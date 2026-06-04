@@ -28,6 +28,7 @@ public class UpdatePersonHandler : IRequestHandler<UpdatePersonCommand, PersonDe
         person.Role = request.Role;
         person.Department = request.Department;
         person.Email = request.Email;
+        person.Summary = request.Summary ?? string.Empty;
         if (!string.IsNullOrWhiteSpace(request.Status))
         {
             person.Status = request.Status;

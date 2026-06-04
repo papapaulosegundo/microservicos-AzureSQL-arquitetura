@@ -23,6 +23,7 @@ public static class DbInitializer
                 Department = "People",
                 Email = "ana.souza@bff.local",
                 Status = "active",
+                Summary = "Responsável pela jornada de admissão e indicadores de onboarding.",
                 CreatedAtUtc = DateTimeOffset.UtcNow.AddDays(-10),
                 LastUpdatedAtUtc = DateTimeOffset.UtcNow.AddDays(-10)
             },
@@ -33,6 +34,7 @@ public static class DbInitializer
                 Department = "People",
                 Email = "carlos.lima@bff.local",
                 Status = "active",
+                Summary = "Acompanha trilhas de capacitação e performance dos líderes.",
                 CreatedAtUtc = DateTimeOffset.UtcNow.AddDays(-5),
                 LastUpdatedAtUtc = DateTimeOffset.UtcNow.AddDays(-5)
             },
@@ -43,6 +45,7 @@ public static class DbInitializer
                 Department = "Operations",
                 Email = "marina.costa@bff.local",
                 Status = "inactive",
+                Summary = "Organiza fluxos de documentos contratuais e assinaturas digitais.",
                 CreatedAtUtc = DateTimeOffset.UtcNow.AddDays(-2),
                 LastUpdatedAtUtc = DateTimeOffset.UtcNow.AddDays(-2)
             }

@@ -17,6 +17,7 @@ public class MappingProfile : Profile
                 src.Department,
                 src.Email,
                 src.Status,
+                src.Summary,
                 src.LastUpdatedAtUtc,
                 "azure-sql-service")); // Source is hardcoded for this MS
     }

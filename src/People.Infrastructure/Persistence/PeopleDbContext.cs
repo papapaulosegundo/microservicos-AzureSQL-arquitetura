@@ -24,6 +24,7 @@ public class PeopleDbContext : DbContext
             entity.Property(e => e.Department).IsRequired().HasMaxLength(100);
             entity.Property(e => e.Email).IsRequired().HasMaxLength(150);
             entity.Property(e => e.Status).IsRequired().HasMaxLength(20).HasDefaultValue("active");
+            entity.Property(e => e.Summary).HasMaxLength(500);
             entity.Property(e => e.CreatedAtUtc).IsRequired();
             entity.Property(e => e.LastUpdatedAtUtc).IsRequired();
         });

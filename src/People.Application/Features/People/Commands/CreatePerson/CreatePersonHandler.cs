@@ -27,7 +27,8 @@ public class CreatePersonHandler : IRequestHandler<CreatePersonCommand, PersonDe
             Role = request.Role,
             Department = request.Department,
             Email = request.Email,
-            Status = string.IsNullOrWhiteSpace(request.Status) ? "active" : request.Status
+            Status = string.IsNullOrWhiteSpace(request.Status) ? "active" : request.Status,
+            Summary = request.Summary ?? string.Empty
         };
 
         var created = await _repository.CreateAsync(person, cancellationToken);

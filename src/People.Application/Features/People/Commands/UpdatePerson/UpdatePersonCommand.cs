@@ -9,4 +9,5 @@ public record UpdatePersonCommand(
     string Role,
     string Department,
     string Email,
-    string Status) : IRequest<PersonDetailDto?>;
+    string Status,
+    string Summary) : IRequest<PersonDetailDto?>;
