@@ -48,6 +48,50 @@ public static class DbInitializer
                 Summary = "Organiza fluxos de documentos contratuais e assinaturas digitais.",
                 CreatedAtUtc = DateTimeOffset.UtcNow.AddDays(-2),
                 LastUpdatedAtUtc = DateTimeOffset.UtcNow.AddDays(-2)
+            },
+            new()
+            {
+                Name = "Juliana Reis",
+                Role = "Gerente de DHO",
+                Department = "People",
+                Email = "juliana.reis@gestaorh.local",
+                Status = "active",
+                Summary = "Liderança na área de Desenvolvimento Humano e Organizacional e engajamento interno.",
+                CreatedAtUtc = DateTimeOffset.UtcNow.AddDays(-30),
+                LastUpdatedAtUtc = DateTimeOffset.UtcNow.AddDays(-15)
+            },
+            new()
+            {
+                Name = "Roberto Silveira",
+                Role = "Analista de DP",
+                Department = "Operations",
+                Email = "roberto.silveira@gestaorh.local",
+                Status = "active",
+                Summary = "Responsável por processamento da folha de pagamento, benefícios e férias.",
+                CreatedAtUtc = DateTimeOffset.UtcNow.AddDays(-25),
+                LastUpdatedAtUtc = DateTimeOffset.UtcNow.AddDays(-25)
+            },
+            new()
+            {
+                Name = "Fernanda Oliveira",
+                Role = "Analista de Atração de Talentos",
+                Department = "People",
+                Email = "fernanda.oliveira@gestaorh.local",
+                Status = "active",
+                Summary = "Recrutamento e seleção de profissionais para áreas de tecnologia e produto.",
+                CreatedAtUtc = DateTimeOffset.UtcNow.AddDays(-12),
+                LastUpdatedAtUtc = DateTimeOffset.UtcNow.AddDays(-1)
+            },
+            new()
+            {
+                Name = "Ricardo Santos",
+                Role = "Diretor de RH",
+                Department = "Executive",
+                Email = "ricardo.santos@gestaorh.local",
+                Status = "active",
+                Summary = "Direcionamento estratégico e governança de políticas corporativas globais.",
+                CreatedAtUtc = DateTimeOffset.UtcNow.AddDays(-90),
+                LastUpdatedAtUtc = DateTimeOffset.UtcNow.AddDays(-90)
             }
         };
 
