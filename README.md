@@ -143,3 +143,27 @@ Para integrar este microserviço com o BFF no projeto `backend-arquitetura-cloud
 - Giulia Casteluci
 - Juliano
 - Gabriela Otte
+
+## Publicacao no Docker Hub sem instalar Docker local
+
+Este repositorio foi preparado para publicar a imagem pelo **GitHub Actions**, entao nao e preciso ter Docker instalado localmente para fazer o build e o push.
+
+### Arquivos usados
+
+- `.github/workflows/docker-people.yml`
+- `.dockerignore`
+
+### Como publicar
+
+1. subir este codigo para o GitHub
+2. abrir o repositorio no GitHub
+3. ir em `Actions`
+4. abrir o workflow `Publish People Microservice Image`
+5. clicar em `Run workflow`
+
+Tambem e possivel publicar automaticamente ao fazer push na branch padrao (`main` ou `master`).
+
+### Tags publicadas
+
+- `${DOCKERHUB_USERNAME}/pjbl-people:latest`
+- `${DOCKERHUB_USERNAME}/pjbl-people:sha-<commit>`
