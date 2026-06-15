@@ -37,7 +37,7 @@ Localizada em [src/People.Infrastructure](file:///C:/Users/paulo/Desktop/projeto
 Localizada em [src/People.API](file:///C:/Users/paulo/Desktop/projeto/microservicos-AzureSQL-arquitetura/src/People.API), atua como o ponto de entrada da aplicação Web:
 - **`PeopleController`**: Controlador REST mapeando os verbos HTTP (`GET`, `POST`, `PUT`, `DELETE`) para os casos de uso do Application.
 - **`Program.cs`**: Configuração geral do pipeline do ASP.NET Core, Injeção de Dependências e execução de scripts de migração automática do banco na inicialização.
-- **Integração OpenAPI & Scalar**: Substituição da interface Swagger por uma interface moderna e bonita no caminho `/scalar/v1`.
+- **Integração OpenAPI & Swagger**: Documentação interativa da API disponível pela interface padrão do Swagger.
 - **Configurações (`appsettings.json`)**: Armazena as strings de conexão com o Azure SQL.
 
 ### 5. Camada de Testes de Arquitetura (`tests/People.ArchitectureTests`)

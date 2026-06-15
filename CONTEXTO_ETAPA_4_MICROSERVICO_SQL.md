@@ -9,7 +9,7 @@ Implementar o **Microserviço 2** da arquitetura distribuída, usando:
 - Banco de dados relacional **Azure SQL**
 - Domínio independente para **People**
 - CRUD completo
-- Swagger/OpenAPI documentado com Scalar
+- Swagger/OpenAPI documentado com Swagger UI
 - Clean Architecture com Vertical Slices
 
 ## Decisão arquitetural adotada

@@ -11,7 +11,7 @@ A escolha do banco relacional Azure SQL para este domínio se deve à natureza e
 - **Core Framework:** .NET 9 / ASP.NET Core Web API
 - **Banco de Dados:** Azure SQL Database
 - **ORM & Acesso a Dados:** Entity Framework Core (EF Core)
-- **Documentação de API:** Scalar (Documentação OpenAPI moderna e interativa que substitui a UI padrão do Swagger)
+- **Documentação de API:** Swagger / OpenAPI
 - **Estruturação:** Clean Architecture & Vertical Slices
 - **Testes de Arquitetura:** ArchUnitNET + xUnit (para validação automatizada de dependências entre camadas)
 - **Containerização:** Docker
@@ -84,9 +84,9 @@ A API expõe os seguintes endpoints documentados:
    ```bash
    dotnet run --project src/People.API/People.API.csproj
    ```
-5. Acesse a documentação moderna da API (Scalar UI) em:
-   - **http://localhost:5096/scalar/v1**
-   - Ou via HTTPS: **https://localhost:7098/scalar/v1**
+5. Acesse a documentação da API (Swagger UI) em:
+   - **http://localhost:5096/swagger/index.html**
+   - Ou via HTTPS: **https://localhost:7098/swagger/index.html**
 
 > [!NOTE]
 > O banco de dados e as tabelas são criadas automaticamente durante a inicialização do microserviço por meio do script de inicialização do EF Core. Colaboradores de teste fictícios também serão populados no banco (`DbInitializer.cs`) se o banco estiver vazio.
@@ -103,7 +103,7 @@ Para rodar o microserviço dentro de um container Docker isolado:
    ```bash
    docker run -d -p 5096:8080 -e ConnectionStrings__DefaultConnection="Server=tcp:srv-gestaorh-sql.database.windows.net,1433;Initial Catalog=gestaorh-people-db;User ID=sqladmin;Password=SUA_SENHA_AQUI;Encrypt=True;TrustServerCertificate=False;" --name peopleservice microservicos-peopleservice:latest
    ```
-3. O endpoint estará exposto em `http://localhost:5096/api/people` e o Scalar em `http://localhost:5096/scalar/v1`.
+3. O endpoint estará exposto em `http://localhost:5096/api/people` e o Swagger em `http://localhost:5096/swagger/index.html`.
 
 ---
 
