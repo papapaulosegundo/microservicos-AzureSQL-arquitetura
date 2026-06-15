@@ -135,3 +135,11 @@ A configuração padrão de conexão reside no arquivo [appsettings.json](file:/
 Para integrar este microserviço com o BFF no projeto `backend-arquitetura-cloud`:
 1. Defina `"UsePeopleMocks": false` no arquivo de configuração do BFF.
 2. Altere o endereço downstream `"PeopleBaseUrl"` para o endereço deste microserviço (`http://localhost:5096/api/people/` ou o correspondente).
+
+## Alunos
+
+- Paulo César Muchalski
+- Paulo Vitor
+- Giulia Casteluci
+- Juliano
+- Gabriela Otte
