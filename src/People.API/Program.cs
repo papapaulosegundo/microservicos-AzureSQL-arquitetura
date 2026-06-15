@@ -1,3 +1,4 @@
+using Microsoft.EntityFrameworkCore;
 using People.Application;
 using People.Infrastructure;
 using People.Infrastructure.Persistence;
@@ -26,14 +27,14 @@ app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
 
-// Automatically create database and tables if they don't exist
+// Automatically apply migrations and seed initial data if needed
 using (var scope = app.Services.CreateScope())
 {
     var services = scope.ServiceProvider;
     try
     {
         var context = services.GetRequiredService<PeopleDbContext>();
-        context.Database.EnsureCreated();
+        context.Database.Migrate();
         
         // Seed some initial data if empty
         DbInitializer.Initialize(context);
